@@ -28,7 +28,7 @@ webpack(webpackConfigProd).run((err, stats) => {
   console.log(`Webpack stats: ${stats}`);
 
   // if we got this far, the build succeeded.
-  console.log('toastik.min is compiled and written to /dist'.green);
+  console.log('toastik.min.js is compiled and written to /dist'.green);
 
   return 0;
 });

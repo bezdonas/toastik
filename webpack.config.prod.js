@@ -2,10 +2,10 @@ import path from 'path';
 import webpack from 'webpack';
 
 export default {
-  debug: true,
-  devtool: 'cheap-module-eval-source-map',
+  debug: false,
+  devtool: 'source-map',
   noInfo: false,
-  entry: './src/index',
+  entry: './src/toastik/index',
   target: 'web',
   output: {
     path: __dirname + '/dist',

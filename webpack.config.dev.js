@@ -6,7 +6,7 @@ export default {
   devtool: 'cheap-module-eval-source-map',
   noInfo: false,
   entry: [
-    './src/index'
+    './src/toastik/index'
   ],
   target: 'web',
   output: {
