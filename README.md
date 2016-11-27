@@ -1,5 +1,8 @@
 # toastik
 
+## DISCLAIMER
+___The library is under development. This note will disappear, when it will be done. Check out [roadmap](https://github.com/bezdonas/toastik/wiki/Roadmap)___
+
 Simple dependancies-free [bootstrapy-looking](http://getbootstrap.com/components/#alerts) javascript toast notifications library.  
 Inspired by [toastr](https://github.com/CodeSeven/toastr) with no desire to use jQuery or any other framework.  
 No css-files are required.
