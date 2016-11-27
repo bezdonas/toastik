@@ -10,7 +10,8 @@ export default {
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
-    filename: 'toastik.min.js'
+    filename: 'toastik.min.js',
+    libraryTarget: 'umd'
   },
   devServer: {
     contentBase: './src'

@@ -1,7 +1,8 @@
 {
   "name": "toastik",
-  "version": "0.1.0",
+  "version": "0.1.16",
   "description": "Simple dependancies-free javascript toast notifications library",
+  "main": "dist/toastik.min.js",
   "scripts": {
     "start": "npm-run-all --parallel test:watch lint:watch open:src",
     "test": "mocha --reporter progress \"src/**/*.spec.js\"",
@@ -12,7 +13,8 @@
     "remove-dist": "node_modules/.bin/rimraf ./dist",
     "prebuild": "npm-run-all clean-dist test lint",
     "build": "babel-node tools/build.js",
-    "open:src": "babel-node tools/server.js"
+    "open:src": "babel-node tools/server.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   },
   "keywords": [
     "toast",
+    "toastik",
     "notifications",
     "notify",
     "alert",
