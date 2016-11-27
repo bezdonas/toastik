@@ -56,6 +56,9 @@ toastik.error('I am an error message', 'Achtung!');
 
 // Info toast with title and custom options
 toastik.info('I am going to stay here for some long time', 'Hey!', { delay: 100500 });
+
+// toastik will also get it, if you'll pass options as second argument, without title
+toastik.success('Blink!', { delay: 1000, corner: [ 'bottom', 'left' ] });
 ```
 
 ## API
