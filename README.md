@@ -57,3 +57,6 @@ toastik.error('I am an error message', 'Achtung!');
 // Info toast with title and custom options
 toastik.info('I am going to stay here for some long time', 'Hey!', { delay: 100500 });
 ```
+
+## API
+API docs here
