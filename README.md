@@ -1,12 +1,5 @@
 # toastik
 
-## ___All stuff below is desirable goal, the library is under development___   
-
-
-
-
-
-
 Simple dependancies-free [bootstrapy-looking](http://getbootstrap.com/components/#alerts) javascript toast notifications library.  
 Inspired by [toastr](https://github.com/CodeSeven/toastr) with no desire to use jQuery or any other framework.  
 No css-files are required.
