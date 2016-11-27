@@ -1,6 +1,6 @@
 {
   "name": "toastik",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Simple dependancies-free javascript toast notifications library",
   "main": "dist/toastik.min.js",
   "scripts": {
