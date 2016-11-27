@@ -1,0 +1,56 @@
+{
+  "name": "toastik",
+  "version": "0.1.17",
+  "description": "Simple dependancies-free javascript toast notifications library",
+  "main": "dist/toastik.min.js",
+  "scripts": {
+    "start": "npm-run-all --parallel test:watch lint:watch open:src",
+    "test": "mocha --reporter progress \"src/**/*.spec.js\"",
+    "test:watch": "npm run test -- --watch",
+    "lint": "node_modules/.bin/esw src tools webpack.config.*",
+    "lint:watch": "npm run lint -- --watch",
+    "clean-dist": "npm run remove-dist && mkdir dist",
+    "remove-dist": "node_modules/.bin/rimraf ./dist",
+    "prebuild": "npm-run-all clean-dist test lint",
+    "build": "babel-node tools/build.js",
+    "open:src": "babel-node tools/server.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bezdonas/toastik.git"
+  },
+  "keywords": [
+    "toast",
+    "toastik",
+    "notifications",
+    "notify",
+    "alert",
+    "warning",
+    "warn"
+  ],
+  "author": "Ramil Aliev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bezdonas/toastik/issues"
+  },
+  "homepage": "https://github.com/bezdonas/toastik#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "colors": "^1.1.2",
+    "eslint": "^3.11.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-watch": "^2.1.14",
+    "expect": "^1.20.2",
+    "express": "^4.14.0",
+    "mocha": "^3.2.0",
+    "npm-run-all": "^3.1.1",
+    "open": "0.0.5",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4"
+  }
+}
