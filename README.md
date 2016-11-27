@@ -26,7 +26,7 @@ npm install --save toastik
 ```
 bower install toastik
 ```
-Want something simple and old-style? Serve it from CDN:
+Want something simple and old-style? Serve it from CDN, or [download](https://link.to.direct.download) and host locally:
 ```
 <script src="link.to.cdn/toastik.min.js"></script>
 ```
