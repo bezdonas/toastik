@@ -41,9 +41,9 @@ import toastik from 'toastik';
 // ...or as AMD module
 var toastik = require('toastik');
 ```
-If you installed it through CDN or as bower package, then you'll just get your `toastik` as global variable in window.  
+If you served it from CDN or as bower package, then you'll just get your `toastik` as global variable.   
 
-
+### Usage examples
 ```javascript
 // Success toast with no title
 toastik.success('Hello world!');
