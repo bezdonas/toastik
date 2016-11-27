@@ -14,7 +14,7 @@ No css-files are required.
 Developed with ES6 compiled by [babel](https://babeljs.io) using [webpack](https://webpack.github.io/)
 
 ## Demo
-Demo can be found at [bezdonas.github.io/toastik](bezdonas.github.io/toastik)
+[bezdonas.github.io/toastik](bezdonas.github.io/toastik)
 
 ## Installation
 
