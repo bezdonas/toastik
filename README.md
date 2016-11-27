@@ -1,7 +1,11 @@
 # toastik
 
 # Under development
-___All stuff below is desirable goal, not working service___
+___All stuff below is desirable goal, not working service___   
+
+
+
+
 
 
 Simple dependancies-free [bootstrapy-looking](http://getbootstrap.com/components/#alerts) javascript toast notifications library.  
