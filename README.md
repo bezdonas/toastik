@@ -3,8 +3,8 @@ ___The library is under development. This note will disappear, when it will be u
 
 
 # toastik
-Simple dependancies-free [bootstrapy-looking](http://getbootstrap.com/components/#alerts) javascript toast notifications library.  
-Inspired by [toastr](https://github.com/CodeSeven/toastr) with no desire to use jQuery or any other framework.  
+Simple but powerful dependancies-free [bootstrapy-looking](http://getbootstrap.com/components/#alerts) javascript toast notifications library.  
+Inspired by [toastr](https://github.com/CodeSeven/toastr) with no desire to use jQuery.  
 No css-files are required.
 
 Developed with ES6 compiled by [babel](https://babeljs.io) using [webpack](https://webpack.github.io/)
@@ -12,24 +12,12 @@ Developed with ES6 compiled by [babel](https://babeljs.io) using [webpack](https
 ## Demo
 [bezdonas.github.io/toastik](bezdonas.github.io/toastik)
 
-## Installation
+## Setup
 
 toastik can be installed as an [npm package](https://www.npmjs.com/package/toastik):
-```
+```shell
 npm install --save toastik
 ```
-...or as [bower package](https://link.to.bower.package):
-```
-bower install toastik
-```
-Want something simple and old-style? Serve it from CDN, or [download](https://link.to.direct.download) and host locally:
-```
-<script src="link.to.cdn/toastik.min.js"></script>
-```
-
-## Basic usage
-
-### Setup
 ```javascript
 // import toastik after installing it as an npm-package using ES6 modules
 import toastik from 'toastik';
@@ -37,7 +25,16 @@ import toastik from 'toastik';
 // ...or as AMD module
 var toastik = require('toastik');
 ```
-If you served it from CDN or as bower package, then you'll just get your `toastik` as global variable.   
+...or as [bower package](https://link.to.bower.package):
+```shell
+bower install toastik
+```
+```html
+<script src="link.to.cdn/toastik.min.js"></script>
+```
+You can also serve toastik from CDN([Link](https://link.to.cdn)), or [download](https://link.to.direct.download) and host locally.
+
+## Basic usage
 
 ### Usage examples
 ```javascript
@@ -54,8 +51,23 @@ toastik.error('I am an error message', 'Achtung!');
 toastik.info('I am going to stay here for some long time', 'Hey!', { delay: 100500 });
 
 // toastik will also get it, if you'll pass options as second argument, without title
-toastik.success('Blink!', { delay: 1000, corner: [ 'bottom', 'left' ] });
+toastik.success('Blink!', { delay: 100, corner: [ 'bottom', 'left' ] });
+
+// Hide all toasts
+toastik.clear();
 ```
 
-## API
-API docs here
+## Customize
+As stated above, you can pass custom options into specific toast:
+```javascript
+// Calls success toast with really short delay
+toastik.success('Blink!', { delay: 100 });
+```
+Reconfiguration of defaults is also possible:
+```
+// Configure all success toasts to have closer button (by default, toasts are closed on clicking them)
+toastik.configure('success', { showCloser: true });
+
+// Or reconfigure all types of toasts to show up at bottom-right corner (top-left is default)
+toastik.configure({ corner: [ 'bottom', 'right' ] });
+```
