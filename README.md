@@ -58,6 +58,8 @@ toastik.clear();
 ```
 
 ## Customize
+
+### Intro
 As stated above, you can pass custom options into specific toast:
 ```javascript
 // Calls success toast with really short delay
@@ -65,24 +67,27 @@ toastik.success('Blink!', { delay: 100 });
 ```
 Reconfiguration of defaults is also possible:
 ```javascript
-// Configure all success toasts to have closer button (by default, toasts are closed on clicking them)
+// Configure all success toasts to have the closer button
 toastik.configure('success', { showCloser: true });
 
-// Or reconfigure all types of toasts to show up at bottom-right corner (top-left is default)
+// Or reconfigure all types of toasts to show up at bottom-right corner
 toastik.configure({ corner: [ 'bottom', 'right' ] });
 ```
 
-Here is list of all options with defaults:
-```javascript
-{
-  delay: 5000,                  // timeout after which toasts will hide automatically, 
-                                // in ms, overriden by 15000 in error type,
-                                // if set to false, then toast will never hide itself
-                                
-  hoverDelay: false,            // delay is extended by infinity if user hovers on it
-  
-  corner: [ 'top', 'left' ],    // corner where toasts appear, x-scale first, y-scale second
-  
-  showCloser: false,            // Shows little closer button on toasts, turns off closing toasts by clicking them
-}
-```
+### Styling
+
+json-formatted toast styling or provide class
+
+### Delays
+delay, hoverDelay
+
+### Positioning
+corner, margin
+
+### Buttons
+closer-icon, action-button
+
+### Template
+override default template
+
+...
