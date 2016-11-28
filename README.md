@@ -74,20 +74,16 @@ toastik.configure('success', { showCloser: true });
 toastik.configure({ corner: [ 'bottom', 'right' ] });
 ```
 
-### Styling
+### Positioning
+corner
 
-json-formatted toast styling or provide class
+### Styling
+json-formatted toast styling or provide class, or override default template
 
 ### Delays
-delay, hoverDelay
-
-### Positioning
-corner, margin
+delay, hoverDelay, statusBar
 
 ### Buttons
 closer-icon, action-button
-
-### Template
-override default template
 
 ...
